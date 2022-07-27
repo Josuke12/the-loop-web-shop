@@ -1,0 +1,3 @@
+# Файл игнорирования
+/node_modules
+package-lock.json

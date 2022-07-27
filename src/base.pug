@@ -1,0 +1,22 @@
+//- 
+    Базовый файл
+    Содержит в себе глобальные переменные,
+    а также шаблон страницы HTML
+
+//- Блок переменных для головы страници
+-
+    const siteTitle = "Document";
+    const siteLang = "ru";
+    const siteCharset = "UTF-8";
+
+
+//- Стандартный шаблон страниц
+doctype html
+html(lang=siteLang)
+    head
+        meta(charset=siteCharset)
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{siteTitle}
+    body
+        block content

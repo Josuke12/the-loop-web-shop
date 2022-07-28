@@ -1,0 +1,146 @@
+::root {
+  --bgColor: #F9F6F1;
+  --standartFont: normal;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--standartFont);
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--bgColor);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+._container {
+  max-width: 111rem;
+  margin: auto;
+}
+
+.header {
+  margin-top: 5.6rem;
+  padding: 0 0.9rem;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.header__topicks {
+  display: flex;
+  align-items: center;
+}
+.header__topicks li:after {
+  content: url(../img/arrow.svg);
+  margin-left: 0.5rem;
+  position: relative;
+  top: -0.2rem;
+}
+.header__topicks li:not(:first-child) {
+  margin-left: 3.5rem;
+}
+.header__logo {
+  margin-left: 9.1rem;
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  max-width: 4rem;
+  margin-right: 2rem;
+}
+.header__logo h3 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.header__user {
+  display: flex;
+  align-items: center;
+  margin-left: 9rem;
+}
+.header__user li:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.header__cart {
+  display: flex;
+  align-items: center;
+  margin-left: 10.1rem;
+}
+.header__cart img {
+  max-width: 3.3rem;
+}
+.header__notif {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 1085px) {
+  .header__cart {
+    display: none;
+  }
+}
+@media (max-width: 907px) {
+  .header {
+    margin-top: 2.2rem;
+  }
+  .header__navigation {
+    flex-direction: column;
+  }
+  .header__topicks {
+    flex-direction: column;
+  }
+  .header__topicks li::after {
+    content: "";
+  }
+  .header__topicks li:not(:first-child) {
+    margin-left: 0;
+  }
+  .header__logo {
+    margin: 1rem 0;
+  }
+  .header__logo img {
+    margin-right: 1rem;
+  }
+  .header__logo h3 {
+    font-size: 1.6rem;
+  }
+  .header__user {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .header__user li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

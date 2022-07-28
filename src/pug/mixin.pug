@@ -4,4 +4,4 @@ mixin createList(...element)
     //- Миксин, который позволяет быстро создать список с неограниченным количеством элементов
     ul(class=attributes.class)
         each liItem in element
-            li #{liItem}
+            li!= liItem

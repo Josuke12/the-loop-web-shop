@@ -3,3 +3,8 @@
 
 @import '_vars';
 @import '_mixin';
+@import '_fonts';
+@import '_settings';
+
+// Подключение компонент
+@import './components/header';

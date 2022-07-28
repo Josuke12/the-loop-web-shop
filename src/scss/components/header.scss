@@ -1,0 +1,123 @@
+.header {
+
+    margin-top: 5.6rem;
+    padding: 0 .9rem;
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        flex-wrap: wrap;
+    }
+
+    &__topicks {
+        display: flex;
+        align-items: center;
+
+        & li {
+            
+            &:after {
+                content: url(../img/arrow.svg);
+                margin-left: .5rem;
+                position: relative;
+                top: -.2rem;
+            }
+    
+            &:not(:first-child) {
+                margin-left: 3.5rem;
+            }
+        }
+    }
+
+    &__logo {
+        margin-left: 9.1rem;
+        display: flex;
+        align-items: center;
+
+        & img {
+            max-width: 4rem;
+            margin-right: 2rem;
+        }
+
+        & h3 {
+            text-transform: uppercase;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-left: 9rem;
+
+        & li {
+            &:not(:last-child) {
+                margin-right: 3.5rem;
+            }
+        }
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+        margin-left: 10.1rem;
+        
+        & img {
+            max-width: 3.3rem;
+        }
+    }
+    &__notif {
+        margin-left: 1.5rem;
+    }
+}
+
+
+@media(max-width: 1085px) {
+    
+    .header {
+        &__cart {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 907px) {
+    .header {
+        margin-top: 2.2rem;
+        &__navigation {
+            flex-direction: column;
+        }
+        &__topicks {
+            flex-direction: column;
+            & li {
+
+                &::after {
+                    content: '';
+                }
+
+                &:not(:first-child) {
+                    margin-left: 0;
+                }
+            }
+        }
+        &__logo {
+            margin: 1rem 0;
+            & img {
+                margin-right: 1rem;
+            }
+            & h3 {
+                font-size: 1.6rem;
+            }
+        }
+        &__user {
+            flex-direction: column;
+            margin-left: 0;
+            & li {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

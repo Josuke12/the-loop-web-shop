@@ -1,0 +1,12 @@
+include ../mixin.pug
+
+header.header
+    nav.header__navigation
+        +createList('Для мужчин', 'Для женщин', 'Для детей')(class="header__topicks")
+        a(href="#", class="header__logo")
+            img(src="img/logo.svg", alt="Логотип")
+            h3 The Loop
+        +createList('Оплата', 'Доставка')(class="header__user")
+        .header__cart
+            img(src="img/cart.svg", alt="Корзина")
+            img(src="img/notif.svg", alt="Уведомление", class="header__notif")

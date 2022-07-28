@@ -5,7 +5,7 @@
 
 //- Блок переменных для головы страници
 -
-    const siteTitle = "Document";
+    const siteTitle = "The Loop — Интернет магазин";
     const siteLang = "ru";
     const siteCharset = "UTF-8";
 
@@ -18,5 +18,15 @@ html(lang=siteLang)
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{siteTitle}
+
+        //- ШРИФТ
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
+        
+        //- СТИЛИ
+        link(rel="stylesheet", href="style/style.css")
     body
-        block content
+        .wrapper._container
+            include ./pug/components/header.pug
+            block content

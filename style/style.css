@@ -142,5 +142,77 @@ button, input {
     margin-right: 0;
   }
 }
+.main-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.preview__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.preview__title p {
+  font-size: 3rem;
+  line-height: 117%;
+  padding-left: 1%;
+}
+.preview__title h1 {
+  font-size: 5.5rem;
+  line-height: 117%;
+  text-transform: uppercase;
+  margin-top: 3.5rem;
+}
+.preview__button {
+  margin-top: 5.5rem;
+}
+
+.tovar__img {
+  max-width: 55.6rem;
+  position: relative;
+}
+.tovar__price {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  font-weight: 700;
+  text-align: right;
+}
+.tovar__price s {
+  font-size: 2.4rem;
+}
+.tovar__price h2 {
+  font-size: 4.2rem;
+  line-height: 152%;
+  color: #D84033;
+}
+
+@media (max-width: 1054px) {
+  .main-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 652px) {
+  .tovar {
+    display: none;
+  }
+  .preview__title p {
+    font-size: 2rem;
+  }
+  .preview__title h1 {
+    font-size: 3.5rem;
+  }
+}
+.button {
+  background: #D7B399;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1.7rem 3rem;
+}
 
 /*# sourceMappingURL=style.css.map */

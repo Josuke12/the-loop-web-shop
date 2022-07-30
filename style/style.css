@@ -215,4 +215,26 @@ button, input {
   padding: 1.7rem 3rem;
 }
 
+.separator-block {
+  background: #212121;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.separator-block__text {
+  padding: 4rem;
+  text-align: center;
+}
+.separator-block__text p {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2.3rem;
+}
+.separator-block__text h5 {
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

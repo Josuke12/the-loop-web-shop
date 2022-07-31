@@ -1,0 +1,53 @@
+.collections {
+	background: #F9F6F1;
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__left {
+
+		p {
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			margin-bottom: 2.5rem;
+		}
+
+		h6 {
+			font-weight: 300;
+			font-size: 1.6rem;
+			margin-bottom: 4rem;
+		}
+
+
+		& .button {
+			max-width: 8rem;
+			max-height: 3rem;
+			padding: .2rem 2rem;
+
+			img {
+				max-width: 2rem;
+			}
+		}
+	}
+
+	&__right img {
+		max-width: 19rem;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.collections {
+		padding: .5rem;
+		&__items {
+			flex-direction: column;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+- let repeat = 1;
+
+section.models._container
+	h3 Новые модели
+	.models__list
+		while repeat <= 4
+			.models__item
+				img(src="img/model.jpg" alt="модель")
+				h4 Коктельное платье
+				p 40 000
+			- repeat++;

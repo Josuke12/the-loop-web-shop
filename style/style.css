@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ::root {
   --bgColor: #F9F6F1;
   --standartFont: normal;
@@ -277,6 +278,55 @@ button, input {
   }
   .collections__items {
     flex-direction: column;
+  }
+}
+.models {
+  margin-top: 5rem;
+}
+.models h3 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 7.3rem;
+}
+.models__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.models__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #D7B399;
+  padding: 2.2rem 2.5rem 2.5rem;
+}
+.models__item img {
+  max-width: 20.5rem;
+}
+.models__item h4 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+.models__item p {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #D7B399;
+  margin-top: 1.5rem;
+}
+.models__item p::before {
+  content: "₽ ";
+}
+.models__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media (max-width: 886px) {
+  .models__list {
+    flex-direction: column;
+  }
+  .models__item:not(:last-child) {
+    margin: 2rem 0;
   }
 }
 

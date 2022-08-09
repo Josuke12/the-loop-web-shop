@@ -216,6 +216,33 @@ button, input {
   padding: 1.7rem 3rem;
 }
 
+.separator {
+  background: #212121;
+  color: #fff;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 4rem 0;
+  margin-right: 3rem;
+}
+.separator input {
+  width: 25.5rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  color: #8D8D8D;
+  font-weight: 300;
+  padding: 1.3rem 1rem 1.2rem 2rem;
+}
+.separator .button {
+  max-height: 4rem;
+  padding: 1.2rem 1.4rem;
+  margin-left: 3.5rem;
+}
 .separator-block {
   background: #212121;
   color: #fff;
@@ -238,6 +265,19 @@ button, input {
   font-size: 2.1rem;
 }
 
+@media (max-width: 1048px) {
+  .separator {
+    flex-direction: column;
+  }
+  .separator .button {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .separator h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+}
 .collections {
   background: #F9F6F1;
 }

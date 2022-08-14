@@ -369,5 +369,123 @@ button, input {
     margin: 2rem 0;
   }
 }
+.footer {
+  margin-top: 10rem;
+}
+.footer__black {
+  background: #212121;
+  color: #fff;
+}
+.footer__block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__header--header {
+  display: flex;
+  align-items: center;
+  margin-top: 6.2rem;
+}
+.footer__header--header img {
+  max-width: 4rem;
+}
+.footer__header--header h3 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-left: 2rem;
+}
+.footer__header--text {
+  margin-top: 3.9rem;
+  margin-bottom: 6.3rem;
+}
+.footer__header--text p {
+  font-size: 1.4rem;
+  line-height: 117%;
+  max-width: 20rem;
+}
+.footer__links {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 22.4rem;
+  margin-top: 2.3rem;
+}
+.footer__link h5 {
+  font-size: 1rem;
+  line-height: 118%;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.footer__link li {
+  color: #CBCFD4;
+  font-size: 1.4rem;
+}
+.footer__link li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer__link img {
+  max-width: 2.4rem;
+}
+.footer__link:not(:last-child) {
+  margin-right: 5.2rem;
+}
+.footer__link .social-list li {
+  display: flex;
+  align-items: center;
+}
+.footer__link .social-list li a {
+  margin-left: 0.5rem;
+}
+.footer__copy {
+  color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin: 3rem 0 2.3rem;
+  padding: 0 0.7rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1047px) {
+  .footer__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__header--text p {
+    max-width: 52rem;
+  }
+  .footer__links {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 653px) {
+  .footer__links {
+    display: none;
+  }
+}
+@media (max-width: 474px) {
+  .footer__copy {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__copy p {
+    line-height: 150%;
+  }
+}
+@media (max-width: 320px) {
+  .footer__header--text {
+    display: none;
+  }
+  .footer__header--header {
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
